@@ -7,9 +7,9 @@ class MDP():
 
     def __init__( self, gridword ):
         self.gridword=gridword
-        self.V= [[0,0,0], [0,0,0], [0,0,0]]
-        self.U = [[0,0,0], [0,0,0], [0,0,0]]
-        self.policy =  [[0,0,0], [0,0,0], [0,0,0]]
+        self.V=[[0 for j in range(len(gridword[0]))] for i in range(len(gridword))]
+        self.U = [[0 for j in range(len(gridword[0]))] for i in range(len(gridword))]
+        self.policy =  [[0 for j in range(len(gridword[0]))] for i in range(len(gridword))]
         self.A = ['^', 'v', '>', '<']
 
 
